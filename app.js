@@ -60,27 +60,20 @@ app.use(session(sessionConfig));
    "https://stackpath.bootstrapcdn.com/",
    "https://cdnjs.cloudflare.com/",
    "https://cdn.jsdelivr.net",
-   "https://kit.fontawesome.com/bde2551b4f.js",
-   "https://cdn.fontawesome.com"
+    "https://kit.fontawesome.com"
 
 ];
 const styleSrcUrls = [ 
-   "https://kit-free.fontawesome.com/" ,
    "https://stackpath.bootstrapcdn.com/" ,
    "https://fonts.googleapis.com/" ,
-   "https://cdnjs.cloudflare.com",
-   "https://use.fontawesome.com/" ,
    "https://cdn.jsdelivr.net" ,
-   "https://kit.fontawesome.com/",
-   "https://cdn.fontawesome.com"
-
+   "https://kit-free.fontawesome.com"
 ];
 const connectSrcUrls = [
 ];
 const fontSrcUrls = [  
     "https://fonts.gstatic.com/",
-"https://kit.fontawesome.com/"
-];
+    "https://kit-free.fontawesome.com"];
 app.use(
    helmet.contentSecurityPolicy({
        directives: {
@@ -94,8 +87,8 @@ app.use(
                "'self'",
                "blob:",
                "data:",
-               "https://res.cloudinary.com/dcvwaxbeh/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
-               "https://images.unsplash.com/"
+               "https://images.unsplash.com/",
+               , "https://kit-free.fontawesome.com"
            ],
            fontSrc: ["'self'", ...fontSrcUrls],
        },
