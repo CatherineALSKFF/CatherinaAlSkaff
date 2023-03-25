@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-const dbUrl= process.env.DB_URL
+const dbUrl= process.env.DB_URL || 'mongodb://127.0.0.1:27017/catherinaalskaff'
 mongoose.set('strictQuery', false);
 mongoose.connect(dbUrl);
 
