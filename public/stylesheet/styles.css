@@ -359,11 +359,17 @@ text-align: center;
 } */
 
 
-@media (min-width:1000px) {
+@media (min-width:700px) {
     .home-img {
-      height: 350px;
-      width:400px;
+      height: 300px;
+      width:350px;
     }
+
+    @media screen and (max-width: 500px) {
+        .home-img {
+          display: none;
+        }
+      }
 
     
   }
