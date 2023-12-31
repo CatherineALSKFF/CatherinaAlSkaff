@@ -13,9 +13,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheet/styles.css">
-</head>
-
-
+    <!-- Google Analytics Script -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= googleAnalyticsId %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+    
+      gtag('config', '<%= googleAnalyticsId %>');
+    </script>
+    
+    </head>
 
 
 <body>
@@ -346,7 +355,7 @@
 <div id="break"></div>
 
 <span class='copyright'>
-Copyright 2023. Made by <a href="">Catherine Al Skaff</a>  
+Copyright 2023. Made by <a href="#home-section">Catherine Al Skaff</a>  
 </span>
 
 

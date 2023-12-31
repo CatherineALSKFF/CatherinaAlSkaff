@@ -60,7 +60,8 @@ app.use(session(sessionConfig));
    "https://stackpath.bootstrapcdn.com/",
    "https://cdnjs.cloudflare.com/",
    "https://cdn.jsdelivr.net",
-    "https://kit.fontawesome.com"
+    "https://kit.fontawesome.com",
+    "https://www.googletagmanager.com"
 
 ];
 const styleSrcUrls = [ 
@@ -72,6 +73,8 @@ const styleSrcUrls = [
 const connectSrcUrls = [
     "'self'",
     "https://ka-f.fontawesome.com",
+    "https://www.google-analytics.com", // Added for Google Analytics
+    "https://region1.google-analytics.com"
 ];
 const fontSrcUrls = [  
     "'self'",  
@@ -105,7 +108,7 @@ app.use(
 
 
 app.get('/', (req, res)=>{
-    res.render('main')
+    res.render('main', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS })
 })
 
 app.post('/contact', async(req,res)=>{
