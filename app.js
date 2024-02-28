@@ -56,53 +56,94 @@ app.use(session(sessionConfig));
 //    helmet()
 //  );
 
- const scriptSrcUrls = [
-   "https://stackpath.bootstrapcdn.com/",
-   "https://cdnjs.cloudflare.com/",
-   "https://cdn.jsdelivr.net",
+const scriptSrcUrls = [
+    "https://stackpath.bootstrapcdn.com/",
+    "https://cdnjs.cloudflare.com/",
+    "https://cdn.jsdelivr.net",
     "https://kit.fontawesome.com",
     "https://www.googletagmanager.com"
+];
 
+const styleSrcUrls = [
+    "https://stackpath.bootstrapcdn.com/",
+    "https://fonts.googleapis.com/",
+    "https://cdn.jsdelivr.net",
+    "https://kit-free.fontawesome.com"
 ];
-const styleSrcUrls = [ 
-   "https://stackpath.bootstrapcdn.com/" ,
-   "https://fonts.googleapis.com/" ,
-   "https://cdn.jsdelivr.net" ,
-   "https://kit-free.fontawesome.com"
-];
+
 const connectSrcUrls = [
     "'self'",
     "https://ka-f.fontawesome.com",
     "https://www.google-analytics.com", // Added for Google Analytics
     "https://region1.google-analytics.com"
 ];
-const fontSrcUrls = [  
-    "'self'",  
+
+const fontSrcUrls = [
+    "'self'",
     "https://fonts.gstatic.com/",
     "https://ka-f.fontawesome.com",
-  "https://kit-free.fontawesome.com",
+    "https://kit-free.fontawesome.com",
+];
+
+// Add this line to include Vimeo's player URL in your frame sources
+const frameSrcUrls = [
+    "https://player.vimeo.com/",
+    // You can add other domains here if you need to load frames from elsewhere
 ];
 
 app.use(
-   helmet.contentSecurityPolicy({
-       directives: {
-           defaultSrc: [],
-           connectSrc: ["'self'", ...connectSrcUrls],
-           scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
-           styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
-           workerSrc: ["'self'", "blob:"],
-           objectSrc: [],
-           imgSrc: [
-               "'self'",
-               "blob:",
-               "data:",
-               "https://images.unsplash.com/",
-               , "https://kit-free.fontawesome.com"
-           ],
-           fontSrc: fontSrcUrls,
-       },
-   })
- );
+    helmet.contentSecurityPolicy({
+        directives: {
+            defaultSrc: [],
+            connectSrc: ["'self'", ...connectSrcUrls],
+            scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
+            styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
+            workerSrc: ["'self'", "blob:"],
+            objectSrc: [],
+            imgSrc: [
+                "'self'",
+                "blob:",
+                "data:",
+                "https://images.unsplash.com/",
+                "https://kit-free.fontawesome.com"
+            ],
+            fontSrc: fontSrcUrls,
+            // Add the frameSrc directive here
+            frameSrc: frameSrcUrls,
+        },
+    })
+);
+
+
+
+
+  const projects = [
+    {
+      title: 'Fasting Focused - Personal Training Platform',
+      techUsed: "HTML, CSS, JS, React, Next.js, Tailwind, Stripe, Google Analytics",
+      description: "I collaborated with Fasting Focused making their online platform from the ground up. With my team we successfully marketed the Fasting Focused programs on Facebook, Instagram and Google and achieved incredible results",
+      link: 'https://fastingfocused.com/',
+      videoUrl: 'https://player.vimeo.com/video/905111178?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&muted=1',
+      githubUrl: "https://github.com/CatherineALSKFF/Fast-Focused"
+    },
+    {
+      title: 'TechFundMe - Blockchain Crowdfunding Platform',
+      techUsed: "HTML, CSS, JS, React, Tailwind, Thirdweb, web3, SmartContracts, Solidity",
+      description: 'Developed TechFundMe, a blockchain-based crowdfunding platform focused on supporting technology causes...',
+      link: 'https://techfundme.net/',
+      videoUrl: 'https://player.vimeo.com/video/905110814?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&muted=1',
+      githubUrl: "https://github.com/CatherineALSKFF/techfundme"
+    },
+    {
+      title: 'Skaf Stones - Exotic Stones Gallery Website',
+      techUsed: "HTML, CSS, JS, ejs, bootstrap, mongodb, mongoose, node.js, express.js",
+      description: 'Collaborated with Skaf Stones Masonry, creating platform representing the brand and marketed their business generating new clients...',
+      link: 'https://skafstones.store',
+      videoUrl: 'https://player.vimeo.com/video/905110035?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&muted=1',
+      githubUrl: "https://github.com/CatherineALSKFF/SkafStones"
+    }
+  ];
+  
 
 
 
@@ -112,7 +153,8 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/projects', (req,res)=>{
-    res.render('projects', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS })
+
+    res.render('projects', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS , projects: projects })
 })
 
 app.post('/contact', async(req,res)=>{
