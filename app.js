@@ -111,11 +111,17 @@ app.get('/', (req, res)=>{
     res.render('main', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS })
 })
 
+app.get('/projects', (req,res)=>{
+    res.render('projects', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS })
+})
+
 app.post('/contact', async(req,res)=>{
     const contacts= new Contact(req.body.contact);
     await contacts.save();   
 res.redirect('/')
 })
+
+
 
 app.listen(3000, () => {
     console.log(`Example app listening on port 3000`)
