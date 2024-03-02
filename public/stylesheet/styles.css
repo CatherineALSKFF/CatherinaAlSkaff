@@ -386,3 +386,12 @@ footer {
     }
   }
   
+
+
+
+  .nextjs-logo {
+    width: 24px; /* Allows the image to maintain its aspect ratio */
+    min-width: 10px; /* Adjust this value based on your preference */
+    height: auto; /* Keeps the image height proportional to its width */
+  }
+  
