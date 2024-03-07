@@ -1,19 +1,4 @@
-/* ELEMENTS */
-#separator-box{
-    background: #1a011b;
-  width: 100% ;
-  height: 5em;
-
-margin: 0;
-}
-
-
-
-
-.break{
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    margin: 2em;
-}
+/* 
 
 #separator-text{
     font-family: 'Poppins';
@@ -23,15 +8,20 @@ font-size: 2em;
 line-height:2.3em;
 text-align: center;
 color: #FFFFFF;
-
-
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.break{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 2em;
+}
 
-/* HOME SECTION */
 
-/* NAVBAR */
+
+
+
+
+
     
 #elipsed{
     border: 1px solid #ffffff;
@@ -60,7 +50,8 @@ color: #FFFFFF;
     border: none;
 }
 
-/* HOME CONTENT */
+
+
 #home-section{
     background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
   height: 100vh;
@@ -102,14 +93,14 @@ justify-content: center;
 }
 
 
-/* HOME PICTURE */
+
 
 
 #home-picture{
     width: 80%;
   max-width: 400px;
   height: 50vh;
-  opacity: 60%;
+  opacity: 30%;
 flex-shrink: inherit;
 align-self: center;
 position: absolute;
@@ -119,21 +110,20 @@ left: 0;
 
 
 
-/* ABOUT SECTION */
+
 
 #about-section{
     padding: 3% 8%;
-    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
 }
 
 #about-pic {
     width: 200px;
     height: 200px;
+    opacity: 0.5;
 }
 
 
 
-/* SKILL SECTION */
 
 .skill-list-title{
     
@@ -164,71 +154,7 @@ color: #FFFFFF;
 }
 
 
-/* PROJECTS SECTION */
 
-/* #projects-section{
-    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
-      padding: 3% 8%;  
-}
-
-#project-img{
-    width: 18rem ;
-    height: 18rem ;
-}
-
-#projects-carousel{
-    background-color: rgb(26, 1, 27,.5);
-
-}
-
-.carousel-item{
-    padding:10% 15%;
-    text-align: center;
-    align-items: center;
-} */
-
-
-
-/* CONTACT SECTION */
-
-
-#contact-section{
-    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
-        padding: 3% 8%; 
-
-}
-
-.card{
-    background-color:  rgb(26, 1, 27,.5);
-    width: 90%;
-    margin: 7% auto;
-    padding: 5%;
-}
-
-
-.form-control{
-   background-color: transparent; 
-   color: beige;
-}
-
-.form-floating label{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    
-    line-height: 30px;
-    
-    color: #c9c2c2;
-    
-}
-
-#abouttext{
-text-align: start;
-align-items: start;
-}
-
-
-/* FOOTER SECTION */
 
 #footer-section{
     background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
@@ -240,6 +166,7 @@ align-items: start;
     background-color:  rgba(22, 1, 23, 0.7);
 height: 100%;
 text-align: center;
+
 
 }
 
@@ -302,4 +229,4 @@ text-align: center;
 
 
 
- 
+  */

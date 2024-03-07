@@ -1,12 +1,16 @@
 /* ELEMENTS */
 #separator-box {
     /* background: #221e22; */
-    background: linear-gradient(to left, rgba(41, 48, 95, 0.978) 0%, rgb(16, 10, 9) 100%);
-    border-radius: 30px;
+    /* background: linear-gradient(to left, rgba(41, 48, 95, 0.978) 0%, rgb(16, 10, 9) 100%); */
+    background: rgba(26, 1, 27, 0.4); /* Slightly transparent */
+
+    border-radius: 20px;
     height: 5em;
     margin: 0px;
     opacity: 0.7;
     box-shadow: #c9c2c2;
+    max-width: 50%;
+    
     
 
 }
@@ -69,7 +73,7 @@ body {
 
 #contact-btn {
     border: #FFFFFF solid 1px;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 /* HOME CONTENT */
@@ -126,8 +130,7 @@ body {
     width: 60%;
     max-width: 400px;
     max-height: 200px;
-    /* height: 30vh; */
-    opacity: 60%;
+    opacity: 30%;
     flex-shrink: inherit;
     align-self: center;
     position: absolute;
@@ -219,7 +222,9 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
-}
+    border-radius: 30px;
+    box-shadow: #FFFFFF;
+ }
 
 
 /* FOOTER SECTION */
@@ -404,3 +409,19 @@ footer {
   .icon-size img {
     width: 4vw; /* Adjusting image width to match icon sizes */
   }
+
+
+
+/* buttons stylesKC */
+#contact-btn,  .btn-outline-light, .contact-btn-form {
+    background-color: transparent;
+    color: white; /* Ensures text is white */
+    border: 2px solid white; /* Solid white border */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#contact-btn:hover, .btn-outline-light:hover, .contact-btn-form:hover {
+    background-image: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, white 100%);
+    color: black; /* Change text color on hover if needed */
+    border-color: white; /* Keep or adjust border color on hover */
+}
