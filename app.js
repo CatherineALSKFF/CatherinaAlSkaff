@@ -158,11 +158,22 @@ app.get('/projects', (req,res)=>{
     res.render('projects', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS , projects: projects })
 })
 
-app.post('/contact', async(req,res)=>{
-    const contacts= new Contact(req.body.contact);
-    await contacts.save();   
-res.redirect('/')
-})
+app.get('/contact', (req, res) => {
+    let message = '';
+    if (req.query.message === 'thankyou') {
+        message = "Thank you for your message, I'll be getting back to you soon.";
+    }
+    res.render('contact', { googleAnalyticsId: process.env.GOOGLE_ANALYTICS, message: message });
+});
+
+
+app.post('/contact', async (req, res) => {
+    const contacts = new Contact(req.body.contact);
+    await contacts.save();
+    // Redirect to /contact with a query parameter
+    res.redirect('/contact?message=thankyou');
+});
+
 
 
 

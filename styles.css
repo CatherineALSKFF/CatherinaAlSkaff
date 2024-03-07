@@ -166,7 +166,7 @@ color: #FFFFFF;
 
 /* PROJECTS SECTION */
 
-#projects-section{
+/* #projects-section{
     background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);  
       padding: 3% 8%;  
 }
@@ -185,7 +185,7 @@ color: #FFFFFF;
     padding:10% 15%;
     text-align: center;
     align-items: center;
-}
+} */
 
 
 
@@ -220,6 +220,11 @@ color: #FFFFFF;
     
     color: #c9c2c2;
     
+}
+
+#abouttext{
+text-align: start;
+align-items: start;
 }
 
 
