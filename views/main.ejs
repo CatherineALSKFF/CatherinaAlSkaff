@@ -10,7 +10,7 @@
 <span class="heading col col-12">I’m Catherine Al Skaff.</span>
 <span class="subheading col col-12 ">Full Stack Web Developer</span>
 <div  class="row img-cont" style="margin-bottom: 0px; padding-bottom: 0px; height:100%">
-<img class="col-6 offset-3 home-img" style="margin-bottom: 0px; padding-bottom: 0px;" src="\images\catherina 1 edited.png" alt="">
+<img class="col-6 offset-3 "  style="margin-bottom: 0px; padding-bottom: 0px;" src="\images\catherina 1 edited.png" alt="">
 </div>
 </div>
 
@@ -19,11 +19,10 @@
 
 
 
-<!-- SEPARATOR BOX 1 -->
-<!-- <div class="" id="separator-box">
-  <p id="separator-text">ABOUT</p>
-</div>
-</div> -->
+
+
+
+
 <div class=" container-fluid row" id="separator-box">
   <p id="separator-text">ABOUT</p>
 </div>
@@ -32,7 +31,7 @@
 <section id="about-section">
    
 
-  <div class="about-content row container-fluid">
+  <!-- <div class="about-content row container-fluid">
 
 <div class="img-about col  col-xsm-12 col-sm-12 col-md-6">
   <h1 class="heading">WEB DEVELOPER BASED IN NORWAY.</h1>
@@ -44,6 +43,17 @@
   <img id="about-pic" src="\images\catherine 2.png" alt="">
 
 </div>
+</div> -->
+
+<div class="about-content row container-fluid">
+  <div class="img-about col col-xsm-12 col-sm-12 col-md-6" data-aos="fade-right">
+    <h1 class="heading">WEB DEVELOPER BASED IN NORWAY.</h1>
+    <p class="subheading">I'm a web developer who loves crafting user-friendly websites. When I'm not coding, you can find me binge-watching Netflix or attempting to make puns. Let's connect and make the internet a better place, one line of code at a time.</p>
+  </div>
+
+  <div class="text-about col col-xsm-12 col-sm-12 col-md-6" data-aos="fade-left">
+    <img id="about-pic" src="\images\catherine 2.png" alt="">
+  </div>
 </div>
 
 
@@ -52,36 +62,6 @@
 
 
 
-<!-- SKILLS SECTION -->
-<!-- <div>
-  <div>
-    <span class="heading col-12">Skills and Knowledge</span>
-    <span class="subheading col-12">I Work in Front End and Backend, making custom websites</span>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6 col-12 skills-container" data-aos="fade-right">
-      <ul class="skill-list" id="front-end-list" style="list-style-type: none;">
-        <li><i class="fa-brands fa-html5"></i></li>
-        <li><i class="fa-brands fa-css3"></i></li>
-        <li><i class="fa-brands fa-js"></i></li>
-        <li><i class="fa-brands fa-bootstrap"></i></li>
-        <li><img src="/images/nextjslogo.png" class="img-fluid " style="width: 6%;" alt=""></li>
-        
-      </ul>
-    </div>
-
-    <div class="col-md-6 col-12 skills-container" data-aos="fade-left">
-      <ul class="skill-list" id="back-end-list" style="list-style-type: none;">
-        <li><i class="fa-brands fa-react"></i></li>
-        <li><i class="fa-brands fa-figma"></i></li>
-        <li><i class="fa-brands fa-node-js"></i></li>
-        <li><i class="fa-solid fa-database"></i></li>
-        <li><i class="fa-brands fa-github"></i></li>
-      </ul>
-    </div>
-  </div>
-</div> -->
 
 <div>
   <div>
@@ -89,24 +69,28 @@
     <span class="subheading col-12">I Work in Front End and Backend, making custom websites</span>
   </div>
 
-  <div class="d-flex justify-content-between mt-4 px-4">
-    <div class="skills-container" data-aos="fade-right">
-      <ul class="skill-list d-flex flex-row justify-content-start align-items-center block" id="front-end-list" style="list-style-type: none; padding: 0;">
-        <li class="mx-2"><i class="fa-brands fa-html5"></i></li>
-        <li class="mx-2"><i class="fa-brands fa-css3"></i></li>
-        <li class="mx-2"><i class="fa-brands fa-js"></i></li>
-        <li class="mx-2"><i class="fa-brands fa-bootstrap"></i></li>
-        <li class="mx-2"><img src="/images/nextjslogo.png" class="img-fluid nextjs-logo" alt=""></li>
+  <!-- Front-end skills list, aligned to the right -->
+  <div class="d-flex justify-content-center mt-4 px-4">
+    <div class="skills-container" data-aos="fade-right" style="justify-content: flex-end; width: 100%;">
+      <ul class="skill-list d-flex justify-content-start align-items-center" id="front-end-list" style="list-style-type: none; padding: 0;">
+        <li class="mx-2"><i class="fa-brands fa-html5 icon-size"></i></li>
+        <li class="mx-2"><i class="fa-brands fa-css3 icon-size"></i></li>
+        <li class="mx-2"><i class="fa-brands fa-js icon-size"></i></li>
+        <li class="mx-2"><i class="fa-brands fa-bootstrap icon-size"></i></li>
+        <li class="mx-2"><img src="/images/nextjslogo.png" class="img-fluid nextjs-logo icon-size" alt=""></li>
       </ul>
     </div>
+  </div>
 
-    <div class="skills-container" data-aos="fade-left">
-      <ul class="skill-list d-flex flex-row justify-content-end align-items-center block" id="back-end-list" style="list-style-type: none; padding: 0;">
-        <li class="mx-2"><i class="fa-brands fa-react"></i></li>
-        <li class="mx-2"><i class="fa-brands fa-figma"></i></li>
-        <li class="mx-2"><i class="fa-brands fa-node-js"></i></li>
-        <li class="mx-2"><i class="fa-solid fa-database"></i></li>
-        <li class="mx-2"><i class="fa-brands fa-github"></i></li>
+  <!-- Back-end skills list, aligned to the left -->
+  <div class="d-flex justify-content-center mt-4 px-4">
+    <div class="skills-container" data-aos="fade-left" style="justify-content: flex-start; width: 100%;">
+      <ul class="skill-list d-flex justify-content-end align-items-center" id="back-end-list" style="list-style-type: none; padding: 0;">
+        <li class="mx-2"><i class="fa-brands fa-react icon-size"></i></li>
+        <li class="mx-2"><i class="fa-brands fa-figma icon-size"></i></li>
+        <li class="mx-2"><i class="fa-brands fa-node-js icon-size"></i></li>
+        <li class="mx-2"><i class="fa-solid fa-database icon-size"></i></li>
+        <li class="mx-2"><i class="fa-brands fa-github icon-size"></i></li>
       </ul>
     </div>
   </div>
@@ -115,150 +99,11 @@
 
 
 
+
+
 </section>
 
-<!-- SEPARATOR BOX 2 -->
-<!-- <div class=" container-fluid row" id="separator-box">
-  <p id="separator-text">PROJECTS</p>
-</div> -->
 
-
-
-<!-- PROJECTS SECTION -->
-<!-- <section id="projects-section">
- 
-  <div id="projects-carousel" class="carousel slide" data-bs-ride="true" >
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#projects-carousel" data-bs-slide-to="4" aria-label="Slide 4"></button>
-
-    </div>
-
-
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <div id="works-container" style="align-items: center;" class="row">
-          <div class="">
-            <img  id='project-img ' style="width: 100%; align-self: center; border-radius: 30px;" src="/images/fastingfocused.png" alt="" class="worksImage justify-content-center">
-          </div>
-          <div >
-          <h1 class="heading">Fasting Focused</h1>
-          <p class="exp-text">I collaborated with my client Christian (an amazing personal trainer) and developed and marketed his website that helps you achieve your health goal! Don't only check the amazing platform but give him some support!
-          </p>
-          <p class="subheading">Used Tech</p>
-          <p class="exp-text">Technology used: HTML, CSS, JS, React, Next.js, Tailwind, Stripe, We also are using the power of Google Analytics.</p>
-         <a href="https://fastingfocused.com/"> <button  class="btn btn-outline-light "> Visit the Page </button></a>
-        
-
-         <a href="https://github.com/CatherineALSKFF/Fast-Focused">  <i class="fa-brands fa-github"></i></a>
-
-          
-          </div>
-         
-          </div>
-        
-      </div>
-
-      <div class="carousel-item ">
-        <div id="works-container" style="align-items: center; " class="row">
-          <div class="">
-            <img  id='project-img ' style="width: 100%; align-self: center; border-radius: 30px;" src="/images/techfundme.png" alt="" class="worksImage justify-content-center">
-          </div>
-          <div >
-          <h1 class="heading">TechFundMe</h1>
-          <p class="exp-text">CrowdFundMe is a blockchain crowdfunding website, to support tech causes and campaigns that you believe in and also get support. 
-            (To use it you should have the Metamask extension on your desktop, it uses the Sepolia testcoin).
-          </p>
-          <p class="subheading">Used Tech</p>
-          <p class="exp-text">Technology used: HTML, CSS, JS, React, Tailwind, Thirdweb, web3, SmartContracts, Solidity, The Power of Blockchain.</p>
-         <a href="https://techfundme.net/"> <button  class="btn btn-outline-light "> Visit the Page </button></a>
-        
-
-         <a href="https://github.com/CatherineALSKFF/techfundme">  <i class="fa-brands fa-github"></i></a>
-
-          
-          </div>
-         
-          </div>
-        
-      </div>
-
-
-
-      <div class="carousel-item ">
-        <div id="works-container" style="align-items: center;" class="row">
-          <div class="">
-            <img  id='project-img ' style="width: 100%; align-self: center; border-radius: 30px;" src="/images/eventures.png" alt="" class="worksImage justify-content-center">
-          </div>
-          <div >
-          <h1 class="heading">Eventures</h1>
-          <p class="exp-text">Eventures is a website that I made from scratch. It's used for finding events around the world, posting events and reviewing events so you can pick up your jam. 
-          </p>
-          <p class="subheading">Used Tech</p>
-          <p class="exp-text">Technology used: HTML, CSS, JS, Bootstrap, Node.js, Mongoose, Mapbox, Cloudinary, Passport.js, Authentication and Authorization.</p>
-         <a href="https://eventures.ventures/"> <button  class="btn btn-outline-light "> Visit the Page </button></a>
-         <a href="https://github.com/CatherineALSKFF/Eventures">  <i class="fa-brands fa-github"></i></a>
-
-
-          
-          </div>
-         
-          </div>
-        
-      </div>
-     
-
-      <div class="carousel-item">
-        <div id="works-container" class="row">
-          <div class=" ">
-            <img  id='project-img' src="/images/skafstones.png" alt="" class="worksImage" style="border-radius: 30px;">
-          </div>
-          <div >
-            <h1 class="heading">Skaf Stones</h1>
-            <p class="exp-text"> This website is for a Stone Gallery Business based in my home country displaying the beauties of Lebanon's natural stones. 
-            </p>
-            <p class="subheading">Used Tech</p>
-            <p class="exp-text">Technology used: HTML, CSS, JS, EJS, Bootstrap, Node.js, and basic security of course(like helmet and mongo-sanitize and so forth).</p>
-           <a href="https://skafstones.store/"> <button  class="btn btn-outline-light "> Visit the Page </button></a>
-           <a href="https://github.com/CatherineALSKFF/SkafStones">  <i class="fa-brands fa-github"></i></a>
-  
-  
-            
-          </div>
-         
-          </div>
-      </div>
-
-
-
-      <div class="carousel-item">
-        <div id="works-container" class="row">
-          <div class=" ">
-            <img  id='project-img' src="\images\coming soon.jpg" alt="" class="worksImage" style="border-radius: 30px;">
-          </div>
-         
-         
-          </div>
-      </div>
-
-
-      
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-</section> -->
 
 
 
